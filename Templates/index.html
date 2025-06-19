@@ -8,28 +8,33 @@
 </head>
 <body>
     <h1 class="titulo">Juego de palabras</h1>
-    <div class="contenedor">
+    
+    <div class="botones">
         <button id="contador">Contador</button>
         <button id="buscador">Buscador</button>
         <button id="generador">Generador de acrónimo</button>
-        
+    </div>
 
+    <div class="contenedor">
         <h4 class="titulo">Contador de palabras</h4>
         <label for="texto-input"></label>
         <input type="text" name="cuenta" id="texto-input" placeholder="inserta tu frase">
         <button id="contar">Contar mi frase</button>
+        <div id="result-cont"></div>
 
 
         <h4 class="titulo">Buscador de palabras</h4>
         <label for="buscar-input"></label>
         <input type="text" name="busca" id="buscar-input" placeholder="inserta tu frase">
         <button id="buscar">Buscar palabra</button>
+        <div id="result-busc"></div>
 
 
         <h4 class="titulo">Generador de acrónimos</h4>
         <label for="insertar"></label>
-        <input type="text" name="poner" id="insertar" placeholder="insertar">
+        <input type="text" id="insertar" placeholder="insertar">
         <button id="generar">Generar acrónimo</button>
+        <div id="result-gen"></div>
 
 
 
