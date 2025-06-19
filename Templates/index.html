@@ -3,38 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../Statics/styles/styles.css">
+    <link rel="stylesheet" href="../Statics/styles/styles.css">
     <title>Juego String</title>
 </head>
 <body>
     <h1 class="titulo">Juego de palabras</h1>
-    <div class="contenedor">
-        <button id="contador">Contador</button>
-        <button id="buscador">Buscador</button>
-        <button id="generador">Generador de acrónimo</button>
-        
+    <div id="contenedorgrande">
+    <div id="contenedor">
+        <button id="contador" class="botonejec">Contador</button>
+        <br>
+        <button id="buscador" class="botonejec">Buscador</button>
+        <br>
+        <button id="generador" class="botonejec">Generador de acrónimo</button>
+    </div>
 
+    <div id="contenedor2">
         <h4 class="titulo">Contador de palabras</h4>
+        <br>
         <label for="texto-input"></label>
         <input type="text" name="cuenta" id="texto-input" placeholder="inserta tu frase">
         <button id="contar">Contar mi frase</button>
 
 
         <h4 class="titulo">Buscador de palabras</h4>
+        <br>
         <label for="buscar-input"></label>
         <input type="text" name="busca" id="buscar-input" placeholder="inserta tu frase">
         <button id="buscar">Buscar palabra</button>
 
 
         <h4 class="titulo">Generador de acrónimos</h4>
+        <br>
         <label for="insertar"></label>
         <input type="text" name="poner" id="insertar" placeholder="insertar">
         <button id="generar">Generar acrónimo</button>
-
-
-
     </div>
-
+    </div>
 
     <script src="../Dynamics/js/juego.js"></script>
 </body>

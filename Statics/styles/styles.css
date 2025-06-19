@@ -1,0 +1,45 @@
+body{
+    background-color: #161618;        
+}
+#contenedor{
+    width: 150px;
+    height: auto;
+    background-color: #161618;
+    color: white;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-self: left;
+    align-self:flex-start;
+}
+#contenedor2{
+    width: 300px;
+    height: auto;
+    background-color: #161618;
+    color: white;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    align-self:flex-start;
+}
+#contenedorgrande{
+    width: 100%;
+    height: 100%;
+    background-color: #161618;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: left;
+    align-self:flex-start;
+    align-items: normal;
+    flex-direction: row;
+}
+.titulo{
+    color: #ffffff;
+}
+.botonejec{
+    width:100px;
+    height: 50px;
+    background-color: rgb(126, 12, 28);
+    color: white;
+}
