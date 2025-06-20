@@ -12,6 +12,11 @@ boton.addEventListener("click", function () {
     let caracteresSEspacios = 0;
     let palabrasLargas = [];
 
+    if (!texto) {
+        pantalla.innerHTML = "Por favor, ingresa una frase para contar.";
+        return;
+    }
+
     arrPalabras.forEach(element => {
         if(element != "")
             cantidadPalabras++;
@@ -25,5 +30,6 @@ boton.addEventListener("click", function () {
         if(arrPalabras[i].length == charXPalabra )
             palabrasLargas.push(arrPalabras[i]);
     }
-    pantalla.innerHTML += `Caracteres: ${caracteresCEspacios} <br> Caracteres Sin Espacios ${caracteresSEspacios} <br> Palabras ${cantidadPalabras} <br> Palabras mas largas: ${palabrasLargas}`;
+
+    pantalla.innerHTML = `Caracteres: ${caracteresCEspacios} <br> Caracteres Sin Espacios ${caracteresSEspacios} <br> Palabras ${cantidadPalabras} <br> Palabras mas largas: ${palabrasLargas} <br>`;
 });
