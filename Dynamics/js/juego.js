@@ -1,4 +1,4 @@
-let string = document.getElementById("texto-inputcont");
+let string = document.getElementById("texto-input");
 let boton = document.getElementById("contar");
 let pantalla = document.getElementById("result-cont");
 

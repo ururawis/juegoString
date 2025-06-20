@@ -18,34 +18,37 @@
     </div>
 
     <div id="contenedor2">
+
+    <div id="vista-contador" class="vista">
         <h4 class="titulo">Contador de palabras</h4>
-        <br>
-        <label for="texto-input"></label>
-        <input type="text" name="cuenta" id="texto-input" placeholder="inserta tu frase">
+        <input type="text" id="texto-input" placeholder="inserta tu frase">
         <button id="contar">Contar mi frase</button>
         <div id="result-cont"></div>
+    </div>
 
-
+    <div id="vista-buscador" class="vista" style="display: none;">
         <h4 class="titulo">Buscador de palabras</h4>
-        <br>
-        <label for="buscar-input"></label>
-        <input type="text" name="busca" id="buscar-input" placeholder="inserta tu frase">
+        <input type="text" id="buscar-frase" placeholder="inserta tu frase">
+        <input type="text" id="buscar-palabra" placeholder="palabra a buscar">
         <button id="buscar">Buscar palabra</button>
         <div id="result-busc"></div>
 
+    </div>
 
+    <div id="vista-generador" class="vista" style="display: none;">
         <h4 class="titulo">Generador de acrónimos</h4>
-        <br>
-        <label for="insertar"></label>
         <input type="text" id="insertar" placeholder="insertar">
         <button id="generar">Generar acrónimo</button>
         <div id="result-gen"></div>
-
-
-
     </div>
-    </div>
+
+</div>
+
+</div>
 
     <script src="../Dynamics/js/juego.js"></script>
+    <script src="../Dynamics/js/buscar_palabra.js"></script>
+    <script src="../Dynamics/js/acronimo.js"></script>
+    <script src="../Dynamics/js/cambio_vista.js"></script>
 </body>
 </html>

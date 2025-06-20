@@ -1,45 +1,82 @@
-body{
-    background-color: #161618;        
-}
-#contenedor{
-    width: 150px;
-    height: auto;
-    background-color: #161618;
-    color: white;
+body {
+    background-color: #f0f4f8; /* Color claro, más neutro y agradable */
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
-    flex-direction:row;
-    flex-wrap: wrap;
-    justify-self: left;
-    align-self:flex-start;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
-#contenedor2{
-    width: 300px;
-    height: auto;
-    background-color: #161618;
-    color: white;
-    display: flex;
-    flex-direction:row;
-    flex-wrap: wrap;
-    align-self:flex-start;
-}
-#contenedorgrande{
+
+/* Contenedor grande general */
+#contenedorgrande {
     width: 100%;
-    height: 100%;
-    background-color: #161618;
-    color: white;
+    min-height: 100vh;
+    background-color: #e8f5e9; /* Verde muy claro */
     display: flex;
     flex-wrap: wrap;
-    justify-self: left;
-    align-self:flex-start;
-    align-items: normal;
     flex-direction: row;
+    align-items: flex-start;
+    justify-content: center; /* Centramos horizontalmente */
+    padding: 30px;
+    gap: 30px;
 }
-.titulo{
-    color: #ffffff;
+
+/* Contenedor pequeño 1 */
+#contenedor {
+    width: 180px;
+    min-height: 120px;
+    background-color: #ffffff;
+    color: #333;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
 }
-.botonejec{
-    width:100px;
+
+/* Contenedor pequeño 2 */
+#contenedor2 {
+    width: 320px;
+    min-height: 120px;
+    background-color: #dfe7fd; /* Azul pastel */
+    color: #1a237e;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Título */
+.titulo {
+    color: #2e7d32; /* Verde oscuro */
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Botones */
+.botonejec {
+    width: 140px;
     height: 50px;
-    background-color: rgb(126, 12, 28);
+    background-color: #64b5f6; /* Azul suave */
     color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 10px auto;
+    display: block;
+}
+
+.botonejec:hover {
+    background-color: #42a5f5;
+    transform: scale(1.05);
 }
